@@ -8,17 +8,16 @@ To view optimizations, clone or download the repository and inspect the code (ma
 
 ####Part 1: Optimized PageSpeed Insights score for `index.html`
 
-These are the steps I took to achieve a Page Speed score of 90+:
+**These are the steps I took to achieve a Page Speed score of 90+:**
 
-	1. Resized portfolio thumbnail images as small as possible without pixelating
-	2. Compressed image files using Grunt imagemin
+	1. Resized and compressed portfolio thumbnail images as small as possible
 	3. Inlined CSS to avoid render blocking
 	4. Removed Google Fonts
 	5. Added `async` to scripts and moved to bottom of `body` tag
 
 ####Part 2: Optimized frames per second in `pizza.html`
 
-These are the steps I took to achieve a consistent frame-rate of 60fps when scrolling:
+**These are the steps I took to achieve a consistent frame-rate of 60fps when scrolling:**
 
 	Refactored `updatePostions()` to avoid forced synchronous layout by:
 		* Finding that there are the same four values of the `phase` calculation by logging values to the console
